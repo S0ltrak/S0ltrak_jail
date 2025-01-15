@@ -4,7 +4,7 @@
 ---]]
 
 
-ESX = exports["EvoFramework"]:getSharedObject()
+ESX = exports["es_extended"]:getSharedObject()
 
 local jailData, antispam = {}, {}
 
