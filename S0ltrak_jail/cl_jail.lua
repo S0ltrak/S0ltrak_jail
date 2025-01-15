@@ -122,7 +122,7 @@ RegisterNetEvent('s0ltrak:jail:finishjailTime', function()
     local playerPed = PlayerPedId()
     RemoveOneBlip()
     SetEntityInvincible(playerPed, false)
-    SetEntityCoords(playerPed, Config.endTimeJail)
+    SetEntityCoords(playerPed, 242.03019714355, -765.00384521484, 30.800825119019)
     ESX.ShowNotification(Config.NotifyEndTimeJail)
     showScaleform = false
 end)
