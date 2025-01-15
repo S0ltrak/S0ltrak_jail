@@ -5,7 +5,7 @@
 
 
 
-ESX = exports["EvoFramework"]:getSharedObject()
+ESX = exports["es_extended"]:getSharedObject()
 
 local c, rt, i, blip = false, 0, 1, nil
 local tasksLeft, reasonTIG, authorTIG
