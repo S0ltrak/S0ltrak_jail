@@ -18,8 +18,6 @@ Config.ZoneRadius = 100.0   -- Rayon de la zone
 Config.DistanceTask = 2.0 -- Distance pour valider la tâche
 Config.TaskDuration = 10000 -- Durée de la tâche en ms
  
-Config.endTimeJail = "242.03019714355, -765.00384521484, 30.800825119019" -- Coordonnées de la sortie de la jail
-
 Config.Unjail = "unjail" ---- Commande pour unjail le joueur 
 Config.Jail = "jail" ---- Commande pour jail le joueur
 
