@@ -5,7 +5,7 @@
 
 Config = {}
 
-Config.WebhookURL = "https://discord.com/api/webhooks/1317512652808785920/aXj06oE4w452clgQ7pOGV9ShGHB0PCi7iV5eABoNCsd0BpUcoCa7bN6oJ5UtmGqvWRkR" -- Webhook URL
+Config.WebhookURL = "" -- Votre webhook
 
 Config.Locations = {
     vector3(3467.8217773438, 2572.7722167969, 15.390962600708),     -- Coordonnées des points de la zone
