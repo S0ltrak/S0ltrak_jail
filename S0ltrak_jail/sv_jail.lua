@@ -139,7 +139,7 @@ RegisterCommand(Config.Jail, function(source, args)
     local identifier = xTarget.identifier
     if jailData[identifier] then
         if source ~= 0 then
-            AdminHelper:serverNotification(source, '🚨 Le joueur est déjà en TIG')
+            TriggerClientEvent("esx:showNotification", source, '🚨 Le joueur est déjà en TIG')
         end
         return
     end
@@ -153,7 +153,7 @@ RegisterCommand(Config.Jail, function(source, args)
     jailData[identifier] = {identifier = identifier, tasks = nbTasks, raison = raison, date = dateNow}
     TriggerClientEvent('s0ltrak:jail:SendClientToJail', targetId, jailData[identifier])
     if source ~= 0 then
-        AdminHelper:serverNotification(source, "🚨 Joueur en TIG pour " .. nbTasks .. " tâches")
+        TriggerClientEvent("esx:showNotification",source, "🚨 Joueur en TIG pour " .. nbTasks .. " tâches")
     end
     SendToDiscord("Mise en TIG", "Staff: " .. (source == 0 and "Console" or xAdmin.identifier) .. " -> " .. identifier .. "\nTâches:" .. nbTasks .. "\nRaison:" .. raison)
 end)
