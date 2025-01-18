@@ -113,7 +113,6 @@ function DoTIGTask()
         i = i + 1
         if i > #locs then i = 1 end
         CreateOneBlip(locs[i])
-        UpdateTIGScaleform()
     end
 end
 
@@ -124,7 +123,6 @@ RegisterNetEvent('s0ltrak:jail:finishjailTime', function()
     SetEntityInvincible(playerPed, false)
     SetEntityCoords(playerPed, 242.03019714355, -765.00384521484, 30.800825119019)
     ESX.ShowNotification(Config.NotifyEndTimeJail)
-    showScaleform = false
 end)
 
 
